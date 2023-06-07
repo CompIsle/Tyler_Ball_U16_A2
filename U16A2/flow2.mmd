@@ -1,0 +1,14 @@
+graph TB
+    A[Start] --> B{File Exists?}
+    B -- Yes --> C[Open File]
+    C -- Read line by line --> D{End of File?}
+    D -- No --> E[Split line into book title and publisher]
+    E -- Generate Unique Number --> F[Add book to dictionary with unique number as key]
+    F --> D
+    D -- Yes --> G[Close File]
+    G --> H{Dictionary Empty?}
+    H -- No --> I[Display Book Information]
+    I --> H
+    H -- Yes --> J[End]
+    B -- No --> K[Error: File Not Found]
+    K --> J

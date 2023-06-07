@@ -1,0 +1,15 @@
+graph TD
+A(Start) --> B(Initialize Task List)
+B --> C{Add Task Button Clicked?}
+C -- Yes --> D(Get Task Details)
+D --> E{Valid Details?}
+E -- Yes --> F(Create Task and Add to List)
+F --> G(Update Task List Display)
+G --> C
+E -- No --> H(Display Error Message)
+H --> C
+C -- No --> I{Show Incomplete Only Checkbox Toggled?}
+I -- Yes --> J(Filter Incomplete Tasks)
+J --> K(Update Task List Display)
+K --> I
+I -- No --> L(End)
