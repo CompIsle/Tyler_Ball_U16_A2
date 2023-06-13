@@ -837,3 +837,17 @@ class Program
 ~~~
 
 I feel like my code is a good program to grow and expand upon, as it achieves the task of reading a CSV file, extracting the publisher information, generating unique random numbers, and storing them in a dictionary. However, I could make the code much better for its function as i wanted the code to output the numbers onto a separate csv file but i struggled to find a solution, so i used a dictionary to store the unique hash numbers. I have used encapsulation in my program by using a dictionary to store book numbers and publishers as it encapsulates related data together.
+
+## Test plan
+
+This is my test plan for the libary index program and my test will include:
+
+Test Reading Input File:
+
+I will provide a valid input CSV file with book details. I will then verify that the program reads the file successfully without any errors To ensure that the number of lines read matches the expected number of books. 
+Test Generating Index Reference
+I will manually create a test case with specific book details (author and title). I will then run the program and verify that the generated index reference is correct. Repeat the test with different book details to ensure the index reference is unique.
+
+Test Indexing Books
+
+I will provide a valid input CSV file with book details. I will then run the program and verify that the indexed books are generated without any errors. Then i will check the indexed books list and ensure that it contains the correct number of books. Verify that each book in the list has the expected index reference.
