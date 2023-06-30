@@ -4,4 +4,4 @@
 
 * Solutions located in folders BookIndex and ToDoList
 
-* SLN files in the relative folders
+* SLN files in their relative folders
